@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="black">
+
+	<meta name="description" content="Jeu apéro - Blind test Rock Disco">
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="application-name" content="PWA Workshop" />
+	<meta name="apple-mobile-web-app-title" content="PWA Workshop" />
+	<meta name="msapplication-starturl" content="/index.html" />
+	
+	
+	<title>AperoZique</title>
+    <!-- CSS -->
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<link rel="shortcut icon" href = "sources/images/favicon.png">
+	<link rel="apple-touch-icon" href = "sources/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<!-- ———————————— Ecran Accueil ––––––––––––––-->
+	<div class="accueil-screen">
+		<img class='logo'
+		src="sources/images/AperoZiqueCarre.png"
+		alt="logo">
+		<h4 class="mix">Jeu apéro</h4>
+		<div class="container">
+			<img id= "blindRock" class= "blind"
+			src="sources/images/LogoBlindRock.png"
+			alt="logo">
+			<img id= "blindDisco" class= "blind"
+			src="sources/images/LogoBlindDisco.png" 
+			alt="logo"> 
+		</div>	
+		<div class="sstit">Blind Test autour d'un thème.<br>
+			Les participants doivent donner les noms du groupe ou du titre du morceau.
+		</div>
+	</div>	
+	<!-- ———————————— Ecran Blind Test ––––––––––––––-->
+	<div class="blindTest-screen" class="musique">
+		<div>
+			<img id="myImg" class='blindRock'
+				src="" 
+				alt="logo">
+				
+		</div>	
+			<div class= "jaquette">
+			<img class='pochette'
+				src="" 
+				alt="jaquette">
+			</div>
+	
+			<div> <span class= "groupe"></span>
+				<br><span class= "titre"></span>
+			</div>
+					<audio src= ></audio>
+			<div class="player">
+				<div class="btns">
+					<img class="retour" class = "touches"
+				  	src="sources/images/retour.png"
+					alt="Bouton Retour">
+					<img class="play-pause" class = "touches"
+				  	src="sources/images/play.png"
+					alt="Bouton Play">
+					<img class="suivant" class = "touches"
+				  	src="sources/images/suivant.png"
+					alt="Bouton Suivant">
+			 	</div>
+			</div>
+
+			<div class="maison">
+				<img class="home" class = "touches"
+				src="sources/images/AZPetit.png"
+			  alt="Bouton Maison">
+
+			</div>
+	</div>	
+</body>
+
+<footer>
+	<div class="filet"></div>
+	<div class ="foot">© François Denivet - Novembre2022</div>
+</footer>
+
+<script src="mainNew.js"></script>
+<script src="app.js"></script>
+
+</html>
