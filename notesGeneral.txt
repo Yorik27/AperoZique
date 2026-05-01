@@ -1,0 +1,15 @@
+
+
+Créer le manifeste
+Générateur de manifest Simicart
+https://www.simicart.com/manifest-generator.html/
+
+Vérifier les images chemins et tailles
+Dupliquer 512x512 pour apple-touch-icon
+
+créer des images masquables avec :
+https://maskable.app/editor
+
+
+Poursuivre la mise en place du service Worker
+https://pwa-workshop.js.org/fr/3-precaching/#preambule-utilisation-des-promesses-et-async-wait 
