@@ -10,83 +10,88 @@
 
 	<meta name="mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="application-name" content="PWA Workshop" />
-	<meta name="apple-mobile-web-app-title" content="PWA Workshop" />
+	<meta name="application-name" content="AperoZique" />
+	<meta name="apple-mobile-web-app-title" content="AperoZique" />
 	<meta name="msapplication-starturl" content="/index.html" />
 	
-	
 	<title>AperoZique</title>
-    <!-- CSS -->
+	<!-- CSS -->
 	<link rel="manifest" href="/manifest.webmanifest" />
-	<link rel="shortcut icon" href = "sources/images/favicon.png">
-	<link rel="apple-touch-icon" href = "sources/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="sources/images/apple-touch-icon.png">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 	<!-- ———————————— Ecran Accueil ––––––––––––––-->
 	<div class="accueil-screen">
-	<!--	<img class='logo'
-		src="sources/images/AperoZiqueCarre.png"
-		alt="logo">
-	-->
+
+		<!-- Logo AperoZique — décommenté -->
+		<img class='logo'
+			src="sources/images/AperoZiqueCarre.png"
+			alt="logo">
+
 		<h4 class="mix">Jeu apéro</h4>
 		<div class="container">
-			<img id= "blindRock" class= "blind"
-			src="sources/images/LogoBlindRock.png"
-			alt="logo">
-			<img id= "blindDisco" class= "blind"
-			src="sources/images/LogoBlindDisco.png" 
-			alt="logo"> 
+			<img id="blindRock" class="blind"
+				src="sources/images/LogoBlindRock.png"
+				alt="logo">
+			<img id="blindDisco" class="blind"
+				src="sources/images/LogoBlindDisco.png" 
+				alt="logo"> 
 		</div>	
 		<div class="sstit">Blind Test autour d'un thème.<br>
 			Les participants doivent donner les noms du groupe ou du titre du morceau.
 		</div>
 	</div>	
+
 	<!-- ———————————— Ecran Blind Test ––––––––––––––-->
-	<div class="blindTest-screen" class="musique">
+	<div class="blindTest-screen">
 		<div>
 			<img id="myImg" class='blindRock'
 				src="" 
 				alt="logo">
-				
 		</div>	
-			<div class= "jaquette">
+		<div class="jaquette">
 			<img class='pochette'
 				src="" 
 				alt="jaquette">
-			</div>
-	
-			<div> <span class= "groupe"></span>
-				<br><span class= "titre"></span>
-			</div>
-					<audio src= ></audio>
-			<div class="player">
-				<div class="btns">
-					<img class="retour" class = "touches"
-				  	src="sources/images/retour.png"
+		</div>
+
+		<div>
+			<span class="groupe"></span>
+			<br><span class="titre"></span>
+		</div>
+
+		<audio src=""></audio>
+
+		<div class="player">
+			<div class="btns">
+				<img class="retour"
+					src="sources/images/retour.png"
 					alt="Bouton Retour">
-					<img class="play-pause" class = "touches"
-				  	src="sources/images/play.png"
+				<img class="play-pause"
+					src="sources/images/play.png"
 					alt="Bouton Play">
-					<img class="suivant" class = "touches"
-				  	src="sources/images/suivant.png"
+				<img class="suivant"
+					src="sources/images/suivant.png"
 					alt="Bouton Suivant">
-			 	</div>
 			</div>
+		</div>
 
-			<div class="maison">
-				<img class="home" class = "touches"
+		<!-- Bouton Maison — style inline pour forcer l'affichage sur Android -->
+		<div class="maison" style="display:flex; justify-content:center; margin-top:30px;">
+			<img class="home"
 				src="sources/images/AZPetit.png"
-			  alt="Bouton Maison">
-
-			</div>
+				alt="Bouton Maison"
+				style="width:80px; cursor:pointer;">
+		</div>
 	</div>	
 </body>
 
 <footer>
 	<div class="filet"></div>
-	<div class ="foot">© François Denivet - Novembre2022</div>
+	<div class="foot">© François Denivet - Novembre2022</div>
 </footer>
 
 <script src="mainNew.js"></script>
